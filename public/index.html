@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatVerse 💬</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.4/dist/index.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <header>💬 Welcome to ChatVerse</header>
+    <div class="chat-box" id="messages"></div>
+
+    <div class="user-inputs">
+      <input type="text" id="username" placeholder="Your Name" />
+      <input type="text" id="messageInput" placeholder="Type your message..." />
+      <button id="emojiBtn">😊</button>
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
